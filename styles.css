@@ -1,0 +1,165 @@
+:root{
+  --background-blue: rgb(65, 150, 230);
+  --background-grey: rgb(187, 179, 179);
+  --background-card: rgb(243, 242, 242);
+
+
+
+}
+
+body{
+  margin: 0;
+  padding: 0;
+}
+
+#mainGrid{
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+  grid-template-rows: 1fr 2fr;
+  height: 100vh;
+  
+}
+
+#dashboard{
+  grid-row: 1/3;
+  background-color: var(--background-blue);
+  color: var(--background-card);
+ 
+}
+
+#profileSettings{
+  margin-bottom: 4vh;
+}
+
+#profileSettings p,
+#settingsSection p,
+.dashlogo h2{
+  margin-left: 1vw;
+}
+
+
+.dashlogo,
+.home,
+.profile,
+.message,
+.history,
+.tasks,
+.community,
+.settings,
+.support,
+.privacy{
+  display: flex;
+  align-items: center;
+  margin-left: 2vw;
+}
+
+#dashboard img{
+  width: 2vw;
+  height: auto;
+}
+
+#dashboard>img{
+  width: 2.5vw;
+  height: auto;
+}
+
+
+
+
+#header{
+  display: grid;
+  grid-template-rows: 1fr 2fr;
+  grid-template-columns: 1fr 3fr repeat(3, 1fr);
+  background-color: whitesmoke;
+}
+
+#firstnav{
+  grid-column: 1/6;
+  display: flex;
+  align-items: center;
+}
+
+#secondnav{
+  grid-column: 1/6;
+  display: flex;
+  align-items: center;
+}
+
+#mainSection{
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-template-rows: repeat(auto-fit, minmax(150px,1fr));
+  gap: 20px;
+  background-color: var(--background-grey);
+
+}
+
+#article{
+  grid-column: 1/2;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-rows: 0.2fr repeat(2, 1fr);
+  gap: 25px;
+  margin-left: 10px;
+
+}
+
+
+
+#article>h2{
+  grid-column: 1/4;
+  
+}
+
+.card{
+  border-left: 7px solid orange;
+  border-radius: 7px;
+  background-color: var(--background-card);
+  width: 17vw;
+  height: 25vh;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+ 
+}
+
+.title{
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 0;
+}
+
+
+
+#rightNews{
+  grid-column: 2/3;
+  display: grid;
+  grid-template-rows: repeat(auto-fit, minmax(300px, 1fr))
+}
+
+#rightNews>h2{
+  grid-column: 2/3;
+}
+
+#news>h2{
+  margin-bottom: 2px;
+}
+
+#trends{
+  display: grid;
+  margin-bottom: 40px;
+}
+
+.banner{
+  
+  border-radius: 10px;
+  background-color: var(--background-card);
+  padding: 5px;
+}
+
+#trends>h2{
+  margin-bottom: 5px;
+}
+
+#newsSection{
+
+}
